@@ -1,17 +1,9 @@
-# SYSTEM: AWAKEN V4
+# SYSTEM: AWAKEN V5 Online
 
-V4-PWA mit:
-- klaren Trainingsvorgaben: Sätze × Wiederholungen/Minuten
-- Pausenangaben
-- Daily Quests und XP
-- langsam skalierender Level-XP
-- E→D→C→B→A→S
-- Rangaufstieg mit Level- UND Trainings-Meilensteinen
-- S-Rang erst ab Level 100 + 300 Trainings + 90 Tage Beständigkeit
-- -50 XP als sichere System-Konsequenz bei verpassten Tagesquests
-- keine körperlichen Strafübungen
-- STR/AGI/VIT/END
-- Streaks
-- lokaler Speicher und Offline-PWA
+Includes real Supabase leaderboard, email/password login, anonymous login, expanded profile, achievements, earned-currency shop, daily free loot box, inventory, server-side training rewards, slow E→S ranks and PWA shell.
 
-Die globale Rangliste/Cloud-Synchronisierung ist noch nicht echt; dafür wird ein Backend benötigt.
+Setup: create Supabase project → enable Email/Password and/or Anonymous Sign-Ins → run supabase_setup.sql → replace YOUR_SUPABASE_URL and YOUR_SUPABASE_PUBLISHABLE_KEY in index.html → publish on GitHub Pages.
+
+Use only the Supabase publishable key in browser; never put a secret/service_role key in index.html. Anonymous accounts can be lost after cleared browser data/sign-out/device change.
+
+Loot boxes are free daily rewards using earned in-game currency; no real-money loot boxes.
